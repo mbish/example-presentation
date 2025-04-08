@@ -195,6 +195,9 @@ graph TD;
 <!-- header: Example > Exporting -->
 
 # Export Slides
+* The normal PDF export doesn't work great with divs and embedded mermaid
+* Instead open the presentation as an HTML file in a browser and print to PDF
 ```
-marp --pdf presentation.md --allow-local-files
+marp --html presentation.md
+google-chrome-stable --headless --print-to-pdf="example.pdf" ./presentation.html
 ```
