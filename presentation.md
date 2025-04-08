@@ -70,6 +70,7 @@ SUBTITLE
 * Mermaid graph
 * Columns
 * Images
+* Code blocks
 * All together
 * Exports
 
@@ -147,6 +148,29 @@ Include in div
 Include inline
 ![width:400px center](./images/example.svg)
 
+---
+
+<!-- header: Example > Code Blocks -->
+
+#### Code Blocks
+Python
+```python
+import math
+def example():
+    return math.sqrt(4)
+```
+
+Bash
+```bash
+echo "Hello world"
+```
+
+Javascript
+```javascript
+function example() {
+    return 4;
+}
+```
 
 ---
 
@@ -175,7 +199,7 @@ graph TD;
 
 <!-- header: Example > Exporting -->
 
-# You can export with
+# Export Slides
 ```
 marp --pdf presentation.md --allow-local-files
 ```
