@@ -69,13 +69,23 @@ SUBTITLE
 <!-- header: Example > Overview -->
 
 ## What we'll cover
-- Mermaid graph
+- Rendering
 - Bullets
+- Mermaid graph
 - Columns
 - Images
 - Code blocks
 - All together
 - Exports
+
+---
+
+### Rendering
+Using the `marp` command you can render `presentation.md` to HTML and watch for changes
+```bash
+marp --html presentation.md -w
+google-chrome presentation.html
+```
 
 ---
 
