@@ -69,12 +69,28 @@ SUBTITLE
 <!-- header: Example > Overview -->
 
 ## What we'll cover
-* Mermaid graph
-* Columns
-* Images
-* Code blocks
-* All together
-* Exports
+- Mermaid graph
+- Bullets
+- Columns
+- Images
+- Code blocks
+- All together
+- Exports
+
+---
+
+<!-- header: Example > Bullets -->
+### Bullets
+- Static bullet
+* Progressive bullet
+* Bullet has other content
+  > This is a quote
+  ```python
+  def example():
+      return 4
+  ```
+* Last bullet
+
 
 ---
 
@@ -125,12 +141,12 @@ Now with
 </div>
 <div>
 
-three 
+three
 
 </div>
 <div>
 
-columns 
+columns
 
 </div>
 </div>
@@ -140,7 +156,7 @@ columns
 <!-- header: Example > Images -->
 
 # Images
-* Usually width 400px is a good setting
+Usually width 400px is a good setting
 
 Include in div
 <div>
@@ -183,7 +199,14 @@ function example() {
 <div class=columns>
 <div>
     <img width="400px" src=./images/example.svg/>
+
+*
+  ```rust
+  println!("That is neat")
+  ```
+
 </div>
+
 <div>
 
 ```mermaid
