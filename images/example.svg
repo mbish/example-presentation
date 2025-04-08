@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="188.64827mm"
+   height="44.421631mm"
+   viewBox="0 0 188.64827 44.421632"
+   version="1.1"
+   id="svg1859"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="example.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1861"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.6819304"
+     inkscape:cx="364.46217"
+     inkscape:cy="152.50334"
+     inkscape:window-width="1920"
+     inkscape:window-height="1172"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1856">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1986">
+      <stop
+         style="stop-color:#acacac;stop-opacity:1;"
+         offset="0"
+         id="stop1982" />
+      <stop
+         style="stop-color:#acacac;stop-opacity:0;"
+         offset="1"
+         id="stop1984" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1986"
+       id="linearGradient1988"
+       x1="39.021172"
+       y1="129.88274"
+       x2="169.6758"
+       y2="131.72244"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-11.159042,-107.67193)">
+    <rect
+       style="opacity:0.3;fill:url(#linearGradient1988);fill-opacity:1;stroke:#000000;stroke-width:0.256"
+       id="rect1980"
+       width="188.39227"
+       height="44.16563"
+       x="11.287042"
+       y="107.79993" />
+    <text
+       xml:space="preserve"
+       style="font-size:10.5833px;opacity:1;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.256"
+       x="57.28685"
+       y="132.6344"
+       id="text2067"><tspan
+         sodipodi:role="line"
+         id="tspan2065"
+         style="font-size:10.5833px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.256"
+         x="57.28685"
+         y="132.6344">Placeholder Image!</tspan></text>
+  </g>
+</svg>
