@@ -41,14 +41,14 @@ style: |
     font-size: 0.8rem;
     flex: 1 1 0;
   }
-  .big-graph > svg {
-    max-height: 500px;
-  }
   .language-mermaid > svg {
     max-height: 480px;
   }
 
 ---
+
+<!-- Mermaid text overflow bug
+https://github.com/mermaid-js/mermaid/issues/5252 -->
 
 <!-- header: TITLE -->
 <!-- _class: title -->
@@ -221,6 +221,7 @@ function example() {
 
 ```mermaid
 graph TD;
+  classDef default font-size:10pt;
   A[Goes to] --> B;
   B{Decision?} --> |yes| C;
   B --> |no| D;
