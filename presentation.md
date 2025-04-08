@@ -59,8 +59,18 @@ SUBTITLE
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
   mermaid.initialize({ startOnLoad: true });
+
+  function fixFonts(id) {
+    let el = document.getElementById(id);
+    let renderedHeight = el.getBoundingClientRect().height;
+    let guessedHeight = el.getBBox().height;
+    let ratio = renderedHeight / guessedHeight;
+    el.style.setProperty("font-size", (ratio * 12) + "pt");
+  }
+
   await mermaid.run({
     querySelector: '.language-mermaid',
+    postRenderCallback: fixFonts
   });
 </script>
 
@@ -210,18 +220,17 @@ function example() {
 <div>
     <img width="400px" src=./images/example.svg/>
 
+</div>
+
 *
   ```rust
   println!("That is neat")
   ```
 
-</div>
-
 <div>
 
 ```mermaid
 graph TD;
-  classDef default font-size:10pt;
   A[Goes to] --> B;
   B{Decision?} --> |yes| C;
   B --> |no| D;
