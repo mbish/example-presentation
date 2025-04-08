@@ -44,6 +44,9 @@ style: |
   .big-graph > svg {
     max-height: 500px;
   }
+  .language-mermaid > svg {
+    max-height: 480px;
+  }
 
 ---
 
@@ -53,6 +56,13 @@ style: |
 # TITLE
 
 SUBTITLE
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+  await mermaid.run({
+    querySelector: '.language-mermaid',
+  });
+</script>
 
 ---
 
@@ -197,7 +207,7 @@ graph TD;
 # Export Slides
 * The normal PDF export doesn't work great with divs and embedded mermaid
 * Instead open the presentation as an HTML file in a browser and print to PDF
-```
-marp --html presentation.md
-google-chrome-stable --headless --print-to-pdf="example.pdf" ./presentation.html
-```
+  ```
+  marp --html presentation.md
+  google-chrome-stable --headless --print-to-pdf="presentation.pdf" ./presentation.html
+  ```
