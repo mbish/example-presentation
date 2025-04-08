@@ -33,10 +33,6 @@ style: |
     display: block;
     margin: 0 auto;
   }
-  .mermaid > svg {
-    width: 100%;
-    height: 100%;
-  }
   .columns {
     display: flex;
     gap: 1rem;
@@ -57,10 +53,6 @@ style: |
 # TITLE
 
 SUBTITLE
-<script type="module">
-  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-  mermaid.initialize({ startOnLoad: true });
-</script>
 
 ---
 
@@ -80,7 +72,7 @@ SUBTITLE
 
 ### Mermaid Graph
 
-<div class="mermaid big-graph">
+```mermaid
   graph TD;
   A[Goes to] --> B;
   B{Decision?} --> |yes| C;
@@ -90,7 +82,7 @@ SUBTITLE
   E --> |no| D;
   D[outcome 1];
   G[outcome 2];
-</div>
+```
 
 ---
 
@@ -182,7 +174,9 @@ function example() {
 <div>
     <img width="400px" src=./images/example.svg/>
 </div>
-<div class="mermaid big-graph">
+<div>
+
+```mermaid
 graph TD;
   A[Goes to] --> B;
   B{Decision?} --> |yes| C;
@@ -192,7 +186,8 @@ graph TD;
   E --> |no| D;
   D[outcome 1];
   G[outcome 2];
-</div>
+```
+
 </div>
 
 ---
