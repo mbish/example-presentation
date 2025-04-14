@@ -2,8 +2,6 @@
 theme: uncover
 style: |
   section {
-  }
-  section {
     background-image:    url(./images/background.svg);
     background-size:     cover;
     background-repeat:   no-repeat;
@@ -47,32 +45,12 @@ style: |
 
 ---
 
-<!-- Mermaid text overflow bug
-https://github.com/mermaid-js/mermaid/issues/5252 -->
-
 <!-- header: TITLE -->
 <!-- _class: title -->
 
 # TITLE
 
 SUBTITLE
-<script type="module">
-  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-  mermaid.initialize({ startOnLoad: true });
-
-  function fixFonts(id) {
-    let el = document.getElementById(id);
-    let renderedHeight = el.getBoundingClientRect().height;
-    let guessedHeight = el.getBBox().height;
-    let ratio = renderedHeight / guessedHeight;
-    el.style.setProperty("font-size", (ratio * 12) + "pt");
-  }
-
-  await mermaid.run({
-    querySelector: '.language-mermaid',
-    postRenderCallback: fixFonts
-  });
-</script>
 
 ---
 
@@ -254,3 +232,28 @@ graph TD;
   marp --html presentation.md
   google-chrome-stable --headless --print-to-pdf="presentation.pdf" ./presentation.html
   ```
+
+---
+
+<!-- Mermaid text overflow bug
+https://github.com/mermaid-js/mermaid/issues/5252 -->
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+
+  function fixFonts(id) {
+    let el = document.getElementById(id);
+    let renderedHeight = el.getBoundingClientRect().height;
+    let guessedHeight = el.getBBox().height;
+    let renderedWidth = el.getBoundingClientRect().width;
+    let guessedWidth = el.getBBox().width;
+    let ratio = Math.max(renderedHeight / guessedHeight, renderedWidth / guessedWidth);
+    el.style.setProperty("font-size", (ratio * 11) + "pt");
+  }
+
+  await mermaid.run({
+    querySelector: '.language-mermaid',
+    postRenderCallback: fixFonts
+  });
+</script>
